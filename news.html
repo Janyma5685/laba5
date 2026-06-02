@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Артемьев Артем Романович">
+  <meta name="keywords" content="HTML, CSS, JavaScript, формы, окна, диалоги, лабораторная работа">
+  <meta name="description" content="Лабораторная работа №5: работа с формами, окнами и диалогами на JavaScript">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Мой первый простой сайт</title>
+  <base href="./">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <h1><a href="index.html">Мой первый простой сайт</a></h1>
+    </div>
+
+    <div id="content">
+      <div id="left">
+
+        <h2>Навигация</h2>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="secret.html">Секретная страница</a></li>
+          <li><a href="sum.html">Сумматор</a></li>
+          <li><a href="calculator.html">WEB-калькулятор</a></li>
+        </ul>
+
+
+        <h2>Ссылки</h2>
+        <ul>
+          <li><a href="https://yandex.ru" target="_blank">Яндекс</a></li>
+          <li><a href="https://google.com" target="_blank">Google</a></li>
+        </ul>
+
+        <h2>Вход</h2>
+        <form action="index.html" method="post">
+          Пользователь:
+          <div align="right"><input name="login" type="text"></div>
+          Пароль:
+          <div align="right"><input name="pwd" type="password"></div>
+          <div align="right"><input name="ok" type="submit" value="Войти"></div>
+        </form>
+
+      </div>
+
+      <div id="right">
+        <h2>Новости</h2>
+        <p><b>Новость 1.</b> На сайте добавлена секретная страница с проверкой пароля через JavaScript.</p>
+        <p><b>Новость 2.</b> Реализовано открытие нового окна с текстом, ссылкой и кнопкой закрытия.</p>
+        <p><b>Новость 3.</b> Добавлены страницы «Сумматор» и «WEB-калькулятор» для работы с формами и объектом Math.</p>
+      </div>
+
+      <div style="clear: both;"></div>
+      <div id="footer">&copy; Артемьев Артем Романович</div>
+    </div>
+  </div>
+</body>
+</html>

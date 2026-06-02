@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Артемьев Артем Романович">
+  <meta name="keywords" content="HTML, CSS, JavaScript, формы, окна, диалоги, лабораторная работа">
+  <meta name="description" content="Лабораторная работа №5: работа с формами, окнами и диалогами на JavaScript">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Мой первый простой сайт</title>
+  <base href="./">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <h1><a href="index.html">Мой первый простой сайт</a></h1>
+    </div>
+
+    <div id="content">
+      <div id="left">
+
+        <h2>Навигация</h2>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="secret.html">Секретная страница</a></li>
+          <li><a href="sum.html">Сумматор</a></li>
+          <li><a href="calculator.html">WEB-калькулятор</a></li>
+        </ul>
+
+
+        <h2>Ссылки</h2>
+        <ul>
+          <li><a href="https://yandex.ru" target="_blank">Яндекс</a></li>
+          <li><a href="https://google.com" target="_blank">Google</a></li>
+        </ul>
+
+        <h2>Вход</h2>
+        <form action="index.html" method="post">
+          Пользователь:
+          <div align="right"><input name="login" type="text"></div>
+          Пароль:
+          <div align="right"><input name="pwd" type="password"></div>
+          <div align="right"><input name="ok" type="submit" value="Войти"></div>
+        </form>
+
+      </div>
+
+      <div id="right">
+        <h2>WEB-калькулятор</h2>
+        <p>Введите исходные данные. Для функций с одним аргументом используется первое поле.</p>
+        <form name="form1" class="calc-form">
+          <table class="calc-table">
+            <tr>
+              <th colspan="2">Исходные данные</th>
+              <th colspan="2">Результат</th>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="text" name="T1" value="0"> <input type="text" name="T2" value="0"></td>
+              <td colspan="2"><input type="text" name="T3" value="0"></td>
+            </tr>
+            <tr>
+              <th>Математика</th>
+              <th>Алгебра</th>
+              <th>Тригонометрия</th>
+              <th>Результат</th>
+            </tr>
+            <tr>
+              <td><input type="button" value="+" onclick="plus()"></td>
+              <td><input type="button" value="ABS" onclick="modul()"></td>
+              <td><input type="button" value="SIN" onclick="sinus()"></td>
+              <td><input type="button" value="ТОЧН." onclick="tochnost()"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="-" onclick="minus()"></td>
+              <td><input type="button" value="SQRT" onclick="koren()"></td>
+              <td><input type="button" value="COS" onclick="cosinus()"></td>
+              <td><input type="button" value="CEIL" onclick="okruglvverh()"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="*" onclick="proizv()"></td>
+              <td><input type="button" value="EXP" onclick="exponent()"></td>
+              <td><input type="button" value="TG" onclick="tangens()"></td>
+              <td><input type="button" value="FLOOR" onclick="okruglvniz()"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="/" onclick="delen()"></td>
+              <td><input type="button" value="LN" onclick="logarifm()"></td>
+              <td><input type="button" value="CTG" onclick="cotangens()"></td>
+              <td><input type="button" value="ROUND" onclick="okrugl()"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="X^Y" onclick="stepen()"></td>
+              <td></td>
+              <td></td>
+              <td><input type="button" value="CE" onclick="steret()"></td>
+            </tr>
+          </table>
+        </form>
+        <p style="margin-top: 12px;">
+          <input type="button" value="Новая форма" name="B1" onclick="new_form()">
+        </p>
+      </div>
+
+      <div style="clear: both;"></div>
+      <div id="footer">&copy; Артемьев Артем Романович</div>
+    </div>
+  </div>
+</body>
+</html>
