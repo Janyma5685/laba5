@@ -2,7 +2,7 @@
 var win;
 
 function access() {
-  while (prompt('Введите пароль для доступа к странице:') !== '222222') {
+  while (prompt('Введите пароль для доступа к странице:') !== '111111') {
     alert('Пароль не верный.');
     if (confirm('Пароль не верный. Повторить ввод?') === false) {
       window.location.href = 'error.html';
